@@ -1,0 +1,58 @@
+@import '../source/core.scss';
+
+.pa-header {
+    padding: $gutter * 3 $gutter * 2;
+    background-color: $black;
+
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+
+    > .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $white;
+
+        @media ($aboveDesktopSmall) {
+            align-items: flex-end;
+
+            > button {
+                display: none;
+            }
+        }
+    }
+
+    &.open {
+        @media ($belowDesktopSmall) {
+            > .container {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+
+            .pa-header__menu {
+                display: flex;
+                flex-direction: column;
+                margin-top: $gutter * 4;
+                gap: $gutter * 3;
+            }
+        }
+    }
+
+    .pa-header__title {
+        font-size: 2.4rem;
+        font-weight: $semiBold;
+    }
+
+    .pa-header__menu {
+        display: none;
+        gap: $gutter * 2;
+        font-size: 1.4rem;
+        font-weight: $semiBold;
+
+        @media ($aboveDesktopSmall) {
+            display: flex;
+        }
+    }
+}

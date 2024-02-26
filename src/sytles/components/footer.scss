@@ -1,0 +1,108 @@
+@import '../source/core.scss';
+
+.pa-footer {
+    margin-top: 40px;
+    padding: $gutter * 5 $gutter * 2 160px;
+    color: $white;
+    background-color: $black;
+
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+.pa-footer__top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 80px;
+    gap: $gutter * 5;
+
+    @media ($aboveDesktopSmall) {
+        flex-direction: row;
+    }
+}
+
+.pa-footer__company {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    padding: 0 $gutter;
+    gap: $gutter * 2;
+
+    @media ($aboveDesktopSmall) {
+        max-width: 40%;
+        padding: 0;
+    }
+}
+
+.pa-footer__companyTitle {
+    font-size: 2.4rem;
+    font-weight: $semiBold;
+}
+
+.pa-footer__socialMedia {
+    display: flex;
+    padding-top: $gutter;
+    gap: $gutter * 2;
+}
+
+.pa-footer__redirects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: $gutter * 4;
+
+    @media ($aboveDesktopSmall) {
+        justify-content: flex-end;
+    }
+}
+
+.pa-footer__links {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 12px;
+
+    span {
+        display: block;
+        font-size: 2.4rem;
+        margin-bottom: $gutter * 3;
+    }
+}
+
+.pa-footer__links--row {
+    flex-direction: row;
+}
+
+.pa-footer__link {
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+.pa-footer__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: $gutter * 3;
+    border-top: 1px solid $white;
+
+    @media ($aboveDesktopSmall) {
+        flex-direction: row;
+    }
+}
+
+.pa-footer__rightsText {
+    display: flex;
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: $light;
+    margin-top: $gutter * 5;
+
+    @media ($aboveDesktopSmall) {
+        align-self: flex-end;;
+        margin-top: 0;
+    }
+}
