@@ -54,7 +54,7 @@ export default function History() {
               <TimeBox year="2020" description="We become the number 1 paper company of Scranton. After hiring a famous Regional Manager of Scraton - Pensilvania and he famous Assistant of Regional Manager. Together They change everything about paper."/>
             </div>
           </section>
-          {/* <section className='pa-section'>
+          <section className='pa-section'>
             <div className='pa-section__textContent'>
               <h2>International Dream (2015 - 2019)</h2>
               <p>We believe in dreams, and all possibilities dreams have. We know how to put things in paper and change people's life through the papers, papers are the most important thing to dreams and draws so don't let your paper die in the water. Rainy days exists but remember, you have paper to write. Book are written using paper, Masterpieces are made of paper. So don't let paper die but tree dies. Our Life's goal is delivery paper and newspaper because our paper is always new papers. So what is your paper? Buy paper now.</p>
@@ -110,7 +110,7 @@ export default function History() {
               <TimeBox year="2006" description="We become the number 1 paper company of Scranton. After hiring a famous Regional Manager of Scraton - Pensilvania and he famous Assistant of Regional Manager. Together They change everything about paper. Limitless paper in a paperless world this is our dream. A real one."/>
               <TimeBox year="2005" description="We become the number 1 paper company of Scranton. After hiring a famous Regional Manager of Scraton - Pensilvania and he famous Assistant of Regional Manager. Together They change everything about paper. Limitless paper in a paperless world this is our dream. A real one."/>
             </div>
-          </section> */}
+          </section>
         </div>
       </main>
       <Footer/>
